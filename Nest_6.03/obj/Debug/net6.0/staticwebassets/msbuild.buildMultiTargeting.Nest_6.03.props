@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Nest_6.03.props" />
+</Project>
