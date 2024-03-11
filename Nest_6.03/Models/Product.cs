@@ -1,0 +1,21 @@
+﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Nest_6._03.Models
+{
+	public class Product
+	{
+        public int Id { get; set; }
+        public string Name { get; set; } = null!;
+        public string Description { get; set; } = null!;
+        public double? Rating { get; set; }
+        public decimal SellPrice { get; set; } = default!;
+        public decimal? DiscountPrice { get; set; }
+        public List<ProductImg> ProductImgs { get; set; } = null!;
+        public int CategoryId { get; set; }
+        public Category Category { get; set; } = null!;
+        public int VendorId { get; set; }
+        public Vendor Vendor { get; set; } = null!;
+    }
+}
+
