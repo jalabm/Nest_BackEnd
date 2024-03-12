@@ -1,0 +1,21 @@
+﻿@model Category
+
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input class="form-control" asp-for="Name" placeholder="Enter name">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div>
+        <img src="~/client/assets/categoryIcons/@Model.Icon" width="100" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Icon"></label>
+        <input type="file" class="form-control" asp-for="Icon" placeholder="Enter icon">
+        <span asp-validation-for="Icon" class="text-danger"></span>
+    </div>
+    <div asp-validation-summary="ModelOnly" class="text-danger">  </div>
+    <button type="submit" class="btn btn-warning">Update</button>
+</form>
+

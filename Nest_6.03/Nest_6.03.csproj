@@ -10,6 +10,7 @@
   <ItemGroup>
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\assets\imgs\productImg\" />
+    <Content Remove="wwwroot\Admin\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\" />
@@ -19,6 +20,17 @@
     <Folder Include="Views\Vendor\" />
     <Folder Include="wwwroot\assets\imgs\productImg\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Views\" />
+    <Folder Include="wwwroot\Admin\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Dashboard\" />
+    <Folder Include="Areas\Admin\Views\Product\" />
+    <Folder Include="Areas\Admin\Views\Category\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\ShopLeft\" />
@@ -26,6 +38,16 @@
     <None Remove="Data\" />
     <None Remove="Views\Vendor\" />
     <None Remove="ViewModels\" />
+    <None Remove="Areas\" />
+    <None Remove="Areas\Admin\" />
+    <None Remove="Areas\Admin\Controllers\" />
+    <None Remove="Areas\Admin\Views\" />
+    <None Remove="Areas\Admin\Views\Shared\" />
+    <None Remove="Areas\Admin\Views\Dashboard\" />
+    <None Remove="Areas\Admin\Views\Product\" />
+    <None Remove="Areas\Admin\Views\Category\" />
+    <None Remove="Extensions\" />
+    <None Remove="Enums\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.27" />
