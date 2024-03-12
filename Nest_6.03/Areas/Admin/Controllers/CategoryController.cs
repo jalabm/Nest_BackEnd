@@ -121,6 +121,7 @@ public class CategoryController : Controller
     public async Task<IActionResult> Delete(int id)
     {
         Category? category = await _context.categories.FirstOrDefaultAsync(x => x.Id == id);
+
         if (category is null)
         {
             return NotFound();
@@ -128,6 +129,28 @@ public class CategoryController : Controller
         category.SoftDelete = true;
         await _context.SaveChangesAsync();
         return RedirectToAction(nameof(Index));
+
     }
+    [HttpPost]
+    public async Task<ActionResult> DeleteFileAsync(int id, string path)
+    {
+        Category? existsCategory = await _context.categories.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+        if (existsCategory == null) return NotFound();
+    
+            string fileDirectory = Path.Combine(
+                  Directory.GetCurrentDirectory(), "assets", "categoryIcons");
+        ViewBag.fileList = Directory
+            .EnumerateFiles(fileDirectory, "*", SearchOption.AllDirectories)
+            .Select(Path.GetFileName);
+        ViewBag.fileDirectory = fileDirectory;
+        string fullPath = Path.Combine( _env.WebRootPath, "assets", "categoryIcons", existsCategory.Icon);
+        if (System.IO.File.Exists(path))
+        {
+            System.IO.File.Delete(path);
+        }
+        return View("Edit");
+    }
+
+
 }
 

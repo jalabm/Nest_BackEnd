@@ -1,7 +1,13 @@
-﻿namespace Nest_6._03.Extensions;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Nest_6._03.Data;
+using Nest_6._03.Models;
+
+namespace Nest_6._03.Extensions;
 
 public static class FileExtension
 {
+
     public static async Task<string> SaveFileAsync(this IFormFile file, string root,  string assets, string folderName)
     {
         string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
@@ -33,5 +39,9 @@ public static class FileExtension
         }
         return true;
     }
+
+   
+
+
 }
 
