@@ -7697,6 +7697,10 @@
       "PackagePath": "staticwebassets/assets/imgs/blog/header-bg.png"
     },
     {
+      "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/categoryIcons/56e7484a-529f-4658-8f8b-ef080d4df67d_alma.jpeg",
+      "PackagePath": "staticwebassets/assets/imgs/categoryIcons/56e7484a-529f-4658-8f8b-ef080d4df67d_alma.jpeg"
+    },
+    {
       "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/invoice/banner.png",
       "PackagePath": "staticwebassets/assets/imgs/invoice/banner.png"
     },
@@ -7767,6 +7771,10 @@
     {
       "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/page/page-404.png",
       "PackagePath": "staticwebassets/assets/imgs/page/page-404.png"
+    },
+    {
+      "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/productImg/alma.jpeg",
+      "PackagePath": "staticwebassets/assets/imgs/productImg/alma.jpeg"
     },
     {
       "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/shop/cat-1.png",
@@ -8455,6 +8463,10 @@
     {
       "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/vendor/vendor-header-bg.png",
       "PackagePath": "staticwebassets/assets/imgs/vendor/vendor-header-bg.png"
+    },
+    {
+      "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/vendorIcons/natudeFood.png",
+      "PackagePath": "staticwebassets/assets/imgs/vendorIcons/natudeFood.png"
     },
     {
       "Id": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/js/invoice/html2canvas.js",

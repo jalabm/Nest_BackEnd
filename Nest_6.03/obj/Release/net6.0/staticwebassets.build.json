@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ptbgPnCF7t+umReCGUhhAPUzsfOdflUEaDNINVEf5ME=",
+  "Hash": "rBTlzmo0tTmV/SYIZDrl8qshjVlQr8X5RuXIeyuSOU8=",
   "Source": "Nest_6.03",
   "BasePath": "_content/Nest_6.03",
   "Mode": "Default",
@@ -32742,6 +32742,23 @@
       "OriginalItemSpec": "wwwroot/assets/imgs/blog/header-bg.png"
     },
     {
+      "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/categoryIcons/56e7484a-529f-4658-8f8b-ef080d4df67d_alma.jpeg",
+      "SourceId": "Nest_6.03",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/",
+      "BasePath": "_content/Nest_6.03",
+      "RelativePath": "assets/imgs/categoryIcons/56e7484a-529f-4658-8f8b-ef080d4df67d_alma.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/imgs/categoryIcons/56e7484a-529f-4658-8f8b-ef080d4df67d_alma.jpeg"
+    },
+    {
       "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/invoice/banner.png",
       "SourceId": "Nest_6.03",
       "SourceType": "Discovered",
@@ -33046,6 +33063,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/imgs/page/page-404.png"
+    },
+    {
+      "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/productImg/alma.jpeg",
+      "SourceId": "Nest_6.03",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/",
+      "BasePath": "_content/Nest_6.03",
+      "RelativePath": "assets/imgs/productImg/alma.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/imgs/productImg/alma.jpeg"
     },
     {
       "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/shop/cat-1.png",
@@ -35970,6 +36004,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/imgs/vendor/vendor-header-bg.png"
+    },
+    {
+      "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/vendorIcons/natudeFood.png",
+      "SourceId": "Nest_6.03",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/",
+      "BasePath": "_content/Nest_6.03",
+      "RelativePath": "assets/imgs/vendorIcons/natudeFood.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/imgs/vendorIcons/natudeFood.png"
     },
     {
       "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/js/invoice/html2canvas.js",

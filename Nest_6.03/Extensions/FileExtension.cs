@@ -8,10 +8,10 @@ namespace Nest_6._03.Extensions;
 public static class FileExtension
 {
 
-    public static async Task<string> SaveFileAsync(this IFormFile file, string root,  string assets, string folderName)
+    public static async Task<string> SaveFileAsync(this IFormFile file, string root,  string assets, string imgs ,string folderName)
     {
         string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
-        string path = Path.Combine(root,  assets, folderName, uniqueFileName);
+        string path = Path.Combine(root,  assets,imgs, folderName, uniqueFileName);
 
 
         using FileStream fs = new FileStream(path, FileMode.Create);

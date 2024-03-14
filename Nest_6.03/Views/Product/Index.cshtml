@@ -90,8 +90,8 @@
                                     <div class="product-img-action-wrap">
                                         <div class="product-img product-img-zoom">
                                             <a href="shop-product-right.html">
-                                                <img class="default-img" src="~/assets/imgs/shop/product-1-1.jpg" alt="" />
-                                                <img class="hover-img" src="~/assets/imgs/shop/product-1-2.jpg" alt="" />
+                                                <img class="default-img" src="~/assets/imgs/productImg/@(product.ProductImgs.FirstOrDefault(x=>x.IsMain).Url)" alt="" />
+                                                <img class="hover-img" style="" src="~/assets/imgs/productImg/@(product.ProductImgs.FirstOrDefault(x=>x.IsHower).Url)" alt="" />
                                             </a>
                                         </div>
                                         <div class="product-action-1">
@@ -105,22 +105,29 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="product-category">
-                                            <a href="shop-grid-right.html">Snack</a>
+                                            <a href="shop-grid-right.html">@product.Category.Name</a>
                                         </div>
-                                        <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoe</a></h2>
+                                        <h2><a href="shop-product-right.html">@product.Name</a></h2>
                                         <div class="product-rate-cover">
                                             <div class="product-rate d-inline-block">
-                                                <div class="product-rating" style="width: 90%"></div>
+                                                <div class="product-rating" style="width: @(product.Rating * 20)%"></div>
                                             </div>
-                                            <span class="font-small ml-5 text-muted"> (4.0)</span>
+                                            <span class="font-small ml-5 text-muted"> (@(product.Rating))</span>
                                         </div>
                                         <div>
-                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">NestFood</a></span>
+                                            <span class="font-small text-muted">By <a href="vendor-details-1.html">@product.Vendor.Name</a></span>
                                         </div>
                                         <div class="product-card-bottom">
                                             <div class="product-price">
-                                                <span>$28.85</span>
-                                                <span class="old-price">$32.8</span>
+                                                @if (product.DiscountPrice > 0)
+                                                {
+                                                    <span>$@product.DiscountPrice</span>
+                                                    <span class="old-price">$@product.SellPrice</span>
+                                                }
+                                                else
+                                                {
+                                                    <span>$@product.SellPrice</span>
+                                                }
                                             </div>
                                             <div class="add-cart">
                                                 <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
@@ -129,9 +136,7 @@
                                     </div>
                                 </div>
                             </div>
-
                         }
-                        <!--end product card-->
                         <!--end product card-->
                     </div>
                     <!--product grid-->
@@ -317,21 +322,16 @@
                     <div class="sidebar-widget widget-category-2 mb-30">
                         <h5 class="section-title style-1 mb-30">Category</h5>
                         <ul>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="~/assets/imgs/theme/icons/category-1.svg" alt="" />Milks & Dairies</a><span class="count">30</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="~/assets/imgs/theme/icons/category-2.svg" alt="" />Clothing</a><span class="count">35</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="~/assets/imgs/theme/icons/category-3.svg" alt="" />Pet Foods </a><span class="count">42</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="~/assets/imgs/theme/icons/category-4.svg" alt="" />Baking material</a><span class="count">68</span>
-                            </li>
-                            <li>
-                                <a href="shop-grid-right.html"> <img src="~/assets/imgs/theme/icons/category-5.svg" alt="" />Fresh Fruit</a><span class="count">87</span>
-                            </li>
+                            @foreach (var category in Model.Categories)
+                            {
+                                if (!category.SoftDelete)
+                                {
+                                    <li>
+                                        <a href="shop-grid-right.html"> <img src="~/client/@category.Icon" alt="" />@category.Name</a><span class="count">@category.Products.Count</span>
+                                    </li>
+                                }
+
+                            }
                         </ul>
                     </div>
                     <!-- Fillter By Price -->

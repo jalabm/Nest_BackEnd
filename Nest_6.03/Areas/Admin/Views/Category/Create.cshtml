@@ -1,16 +1,16 @@
 ﻿@model Category
 
 
-<form method="post">
+<form enctype="multipart/form-data" method="post">
     <div class="form-group">
         <label asp-for="Name">Name</label>
         <input class="form-control" asp-for="Name" placeholder="Enter name">
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Icon"></label>
-        <input type="file" class="form-control" asp-for="Icon" placeholder="Enter icon">
-        <span asp-validation-for="Icon" class="text-danger"></span>
+        <label asp-for="File"></label>
+        <input  class="form-control" asp-for="File" placeholder="Enter icon">
+        <span asp-validation-for="File" class="text-danger"></span>
     </div>
     <div asp-validation-summary="ModelOnly" class="text-danger">  </div>
     <button type="submit" class="btn btn-primary">Save</button>

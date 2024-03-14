@@ -11,7 +11,7 @@ namespace Nest_6._03.Models
         public IFormFile File { get; set; } = null!;
         public  bool  IsMain{ get; set; }
         public bool IsHower { get; set; }
-        public int ProdictId { get; set; }
+        public int ProductId { get; set; }
         public Product Product { get; set; } = null!;
     }
 }

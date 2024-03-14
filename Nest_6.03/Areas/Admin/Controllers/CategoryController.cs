@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Nest_6._03.Data;
 using Nest_6._03.Extensions;
@@ -33,8 +32,9 @@ public class CategoryController : Controller
     [HttpPost]
     public async Task<IActionResult> Create(Category category)
     {
+        
         if (!ModelState.IsValid)
-            return View();
+            return View(category);
         if (!category.File.CheckFileType("image"))
         {
             ModelState.AddModelError("", "Invalid File");
@@ -46,7 +46,7 @@ public class CategoryController : Controller
             return View(category);
         }
 
-        string uniqueFileName = await category.File.SaveFileAsync(_env.WebRootPath, "assets", "categoryIcons");
+        string uniqueFileName = await category.File.SaveFileAsync(_env.WebRootPath, "assets","imgs", "categoryIcons");
 
         Category newCategory = new Category
         {
@@ -91,14 +91,14 @@ public class CategoryController : Controller
                 return View(category);
             }
 
-            var path = Path.Combine(_env.WebRootPath,  "assets", "categoryIcons", existsCategory.Icon);
+            var path = Path.Combine(_env.WebRootPath,  "assets", "imgs","categoryIcons", existsCategory.Icon);
             if (System.IO.File.Exists(path))
             {
                 System.IO.File.Delete(path);
             }
 
             var uniqueFileName = await category.File.
-                SaveFileAsync(_env.WebRootPath, "assets", "categoryIcons");
+                SaveFileAsync(_env.WebRootPath, "assets", "imgs", "categoryIcons");
 
             existsCategory.Icon = uniqueFileName;
             existsCategory.Name = category.Name;
@@ -131,26 +131,6 @@ public class CategoryController : Controller
         return RedirectToAction(nameof(Index));
 
     }
-    [HttpPost]
-    public async Task<ActionResult> DeleteFileAsync(int id, string path)
-    {
-        Category? existsCategory = await _context.categories.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
-        if (existsCategory == null) return NotFound();
     
-            string fileDirectory = Path.Combine(
-                  Directory.GetCurrentDirectory(), "assets", "categoryIcons");
-        ViewBag.fileList = Directory
-            .EnumerateFiles(fileDirectory, "*", SearchOption.AllDirectories)
-            .Select(Path.GetFileName);
-        ViewBag.fileDirectory = fileDirectory;
-        string fullPath = Path.Combine( _env.WebRootPath, "assets", "categoryIcons", existsCategory.Icon);
-        if (System.IO.File.Exists(path))
-        {
-            System.IO.File.Delete(path);
-        }
-        return View("Edit");
-    }
-
-
 }
 

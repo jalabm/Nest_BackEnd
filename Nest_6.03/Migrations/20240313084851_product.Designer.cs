@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Nest_6._03.Data;
 
@@ -11,9 +12,10 @@ using Nest_6._03.Data;
 namespace Nest_6._03.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240313084851_product")]
+    partial class product
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,9 +75,6 @@ namespace Nest_6._03.Migrations
                     b.Property<decimal>("SellPrice")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<bool>("SoftDelete")
-                        .HasColumnType("bit");
-
                     b.Property<int>("VendorId")
                         .HasColumnType("int");
 
@@ -116,75 +115,6 @@ namespace Nest_6._03.Migrations
                     b.ToTable("productimgs");
                 });
 
-            modelBuilder.Entity("Nest_6._03.Models.ProductSize", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SizeId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("SizeId");
-
-                    b.ToTable("ProductSize");
-                });
-
-            modelBuilder.Entity("Nest_6._03.Models.ProductWeight", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("Count")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("WeightId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ProductId");
-
-                    b.HasIndex("WeightId");
-
-                    b.ToTable("ProductWeight");
-                });
-
-            modelBuilder.Entity("Nest_6._03.Models.Size", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Size");
-                });
-
             modelBuilder.Entity("Nest_6._03.Models.Vendor", b =>
                 {
                     b.Property<int>("Id")
@@ -214,29 +144,9 @@ namespace Nest_6._03.Migrations
                     b.Property<double?>("Rating")
                         .HasColumnType("float");
 
-                    b.Property<bool>("SoftDelete")
-                        .HasColumnType("bit");
-
                     b.HasKey("Id");
 
                     b.ToTable("vendors");
-                });
-
-            modelBuilder.Entity("Nest_6._03.Models.Weight", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Weight");
                 });
 
             modelBuilder.Entity("Nest_6._03.Models.Product", b =>
@@ -269,44 +179,6 @@ namespace Nest_6._03.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Nest_6._03.Models.ProductSize", b =>
-                {
-                    b.HasOne("Nest_6._03.Models.Product", "Product")
-                        .WithMany("ProductSizes")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Nest_6._03.Models.Size", "Size")
-                        .WithMany("ProductSizes")
-                        .HasForeignKey("SizeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("Size");
-                });
-
-            modelBuilder.Entity("Nest_6._03.Models.ProductWeight", b =>
-                {
-                    b.HasOne("Nest_6._03.Models.Product", "Product")
-                        .WithMany("ProductWeights")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Nest_6._03.Models.Weight", "Weight")
-                        .WithMany("ProductWeights")
-                        .HasForeignKey("WeightId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Product");
-
-                    b.Navigation("Weight");
-                });
-
             modelBuilder.Entity("Nest_6._03.Models.Category", b =>
                 {
                     b.Navigation("Products");
@@ -315,25 +187,11 @@ namespace Nest_6._03.Migrations
             modelBuilder.Entity("Nest_6._03.Models.Product", b =>
                 {
                     b.Navigation("ProductImgs");
-
-                    b.Navigation("ProductSizes");
-
-                    b.Navigation("ProductWeights");
-                });
-
-            modelBuilder.Entity("Nest_6._03.Models.Size", b =>
-                {
-                    b.Navigation("ProductSizes");
                 });
 
             modelBuilder.Entity("Nest_6._03.Models.Vendor", b =>
                 {
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("Nest_6._03.Models.Weight", b =>
-                {
-                    b.Navigation("ProductWeights");
                 });
 #pragma warning restore 612, 618
         }
