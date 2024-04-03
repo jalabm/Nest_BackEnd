@@ -24,7 +24,8 @@ public class Product
     {
         ProductSizes = new HashSet<ProductSize>();
         ProductWeights = new HashSet<ProductWeight>();
-    }
+        ProductImgs = new();
+    }   
 }
 
 

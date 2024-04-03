@@ -45,7 +45,14 @@ public class CategoryController : Controller
             ModelState.AddModelError("", "Invalid File Size");
             return View(category);
         }
+        var isExist =await _context.categories.AnyAsync(x => x.Name.ToLower() == category.Name.ToLower());
 
+        if (isExist)
+        {
+            ModelState.AddModelError("Name", "category name is already exist");
+            return View();
+
+        }
         string uniqueFileName = await category.File.SaveFileAsync(_env.WebRootPath, "assets","imgs", "categoryIcons");
 
         Category newCategory = new Category

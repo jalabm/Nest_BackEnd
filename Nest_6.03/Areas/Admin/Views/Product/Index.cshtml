@@ -35,7 +35,7 @@
                                     @foreach (var product in Model)
                                     {
                                         <tr class="odd">
-                                            <td style="display:flex; justify-content:center; align-items:center"><img width="50" src="~/assets/imgs/productImg/@product.ProductImgs.FirstOrDefault(x=>x.IsMain).Url" /></td>
+                                            <td style="display:flex; justify-content:center; align-items:center"><img width="50" src="~/assets/imgs/productImg/@product.ProductImgs.FirstOrDefault(x=>x.IsMain)?.Url" /></td>
                                             <td class="sorting_1">@product.Name</td>
                                             <td class="sorting_1">@product.Description</td>
                                             <td class="sorting_1">@product.SellPrice</td>

@@ -41,6 +41,7 @@
     <Folder Include="Views\Account\" />
     <Folder Include="Dtos\" />
     <Folder Include="Dtos\AppUserDtos\" />
+    <Folder Include="Dtos\ProductDtos\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -64,6 +65,7 @@
     <None Remove="Views\Account\" />
     <None Remove="Dtos\" />
     <None Remove="Dtos\AppUserDtos\" />
+    <None Remove="Dtos\ProductDtos\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.27" />
