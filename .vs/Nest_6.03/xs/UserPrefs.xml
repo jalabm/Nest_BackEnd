@@ -1,4 +1,66 @@
 ﻿<Properties StartupConfiguration="{283DAE2B-0B6B-495E-8983-77F25F53013E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Nest_6.03/Controllers/ProductController.cs">
+    <Files>
+      <File FileName="Nest_6.03/Areas/Admin/Controllers/NavBarController.cs" />
+      <File FileName="Nest_6.03/Areas/Admin/Controllers/SubNavBarController.cs" />
+      <File FileName="Nest_6.03/Models/Size.cs" />
+      <File FileName="Nest_6.03/Areas/Admin/Controllers/ProductController.cs" />
+      <File FileName="Nest_6.03/Models/Category.cs" />
+      <File FileName="Nest_6.03/Controllers/ProductController.cs" Line="31" Column="15" />
+      <File FileName="Nest_6.03/ViewModels/ProductVm.cs" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/Product/Create.cshtml" />
+      <File FileName="Nest_6.03/Views/Home/Index.cshtml" Line="3" Column="1" />
+      <File FileName="Nest_6.03/Models/Product.cs" />
+      <File FileName="Nest_6.03/Models/ProductImg.cs" />
+      <File FileName="Nest_6.03/Views/Product/Index.cshtml" />
+      <File FileName="Nest_6.03/Controllers/HomeController.cs" />
+      <File FileName="Nest_6.03/Controllers/AccountController.cs" Line="45" Column="68" />
+      <File FileName="Nest_6.03/Enums/Roles.cs" Line="6" Column="14" />
+      <File FileName="Nest_6.03/Models/AppUser.cs" Line="14" Column="1" />
+      <File FileName="Nest_6.03/Services/LayoutService.cs" Line="26" Column="14" />
+      <File FileName="Nest_6.03/Services/ILayoutService.cs" Line="9" Column="6" />
+      <File FileName="Nest_6.03/ViewModels/LoginVm.cs" Line="14" Column="5" />
+      <File FileName="Nest_6.03/ViewModels/RegisterVm.cs" Line="9" Column="50" />
+      <File FileName="Nest_6.03/Views/Account/Login.cshtml" Line="2" Column="1" />
+      <File FileName="Nest_6.03/Views/Account/Register.cshtml" Line="1" Column="18" />
+      <File FileName="Nest_6.03/Views/Shared/_Layout.cshtml" Line="16" Column="36" />
+      <File FileName="Nest_6.03/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Views/_ViewImports.cshtml" Line="3" Column="29" />
+      <File FileName="Nest_6.03/Program.cs" Line="18" Column="41" />
+      <File FileName="Nest_6.03/Data/AppDbContext.cs" Line="17" Column="3" />
+      <File FileName="Nest_6.03/Migrations/20240402093424_appUser.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Dtos/AppUserDtos/UserGetDto.cs" Line="9" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Nest_6.03" expanded="True">
+            <Node name="Nest_6.03">
+              <Node name="Controllers" expanded="True">
+                <Node name="ProductController.cs" selected="True" />
+              </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Dtos" expanded="True" />
+              <Node name="Enums" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Nest__6.03 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Nest__6.03 FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
 </Properties>

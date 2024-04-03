@@ -15,10 +15,10 @@ public class ProductController : Controller
     {
         _context = context;
     }
+  
 
     public async Task<IActionResult> Index()
     {
-
         List<Product> products = await _context.products
                                .Include(x => x.Category)
                                .Include(x => x.ProductImgs)
@@ -26,6 +26,28 @@ public class ProductController : Controller
                                .Where(x=>!x.SoftDelete)
                                .ToListAsync();
         return View(products);
+        
+    }
+
+
+    public async Task<IActionResult> Details(int? id)
+    {
+
+        if (id == null||  id<=0) return BadRequest();
+       
+        var product = await _context.products
+                               .Include(x => x.Category)
+                               .Include(x => x.ProductImgs)
+                               .Include(x => x.Vendor)
+                               .Include(x=>x.ProductSizes)
+                               .ThenInclude(x=>x.Size)
+                               .Where(x => !x.SoftDelete)
+                               .FirstOrDefaultAsync(x => x.Id == id);
+        if (product==null )
+        {
+            return NotFound();
+        }
+        return View(product);
         
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IA3som+FF+muMwInWL4yNkbRpKfNEuLXVtJbw9PZoVs=",
+  "Hash": "YSBF+k9P5E51NWHkk8tpp5Yc6ZzhR2UNChLqlqwzOF4=",
   "Source": "Nest_6.03",
   "BasePath": "_content/Nest_6.03",
   "Mode": "Default",
@@ -32740,6 +32740,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/assets/imgs/blog/header-bg.png"
+    },
+    {
+      "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/categoryIcons/193a1835-f91f-4406-8ca1-d36f4f4057a8_alma.jpeg",
+      "SourceId": "Nest_6.03",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/",
+      "BasePath": "_content/Nest_6.03",
+      "RelativePath": "assets/imgs/categoryIcons/193a1835-f91f-4406-8ca1-d36f4f4057a8_alma.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/imgs/categoryIcons/193a1835-f91f-4406-8ca1-d36f4f4057a8_alma.jpeg"
     },
     {
       "Identity": "/Users/jal/Desktop/Nest_6.03/Nest_6.03/wwwroot/assets/imgs/categoryIcons/56e7484a-529f-4658-8f8b-ef080d4df67d_alma.jpeg",

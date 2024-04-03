@@ -65,6 +65,33 @@
                     </div>
                 </div>
             </li>
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseNavBar"
+                   aria-expanded="false" aria-controls="collapseNavBar">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>NavBars</span>
+                </a>
+                <div id="collapseNavBar" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        @* <h6 class="collapse-header">Custom Components:</h6> *@
+                        <a class="collapse-item" asp-controller="NavBar" asp-action="Index">Navbar List</a>
+                        <a class="collapse-item" asp-controller="NavBar" asp-action="Create">Navbar Create</a>
+                    </div>
+                </div>
+            </li> <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSubNavbar"
+                   aria-expanded="false" aria-controls="collapseSubNavbar">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>SubNavbars</span>
+                </a>
+                <div id="collapseSubNavbar" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        @* <h6 class="collapse-header">Custom Components:</h6> *@
+                        <a class="collapse-item" asp-controller="SubNavbar" asp-action="Index">SubNavbar List</a>
+                        <a class="collapse-item" asp-controller="SubNavbar" asp-action="Create">SubNavbar Create</a>
+                    </div>
+                </div>
+            </li>
 
         </ul>
         <!-- End of Sidebar -->

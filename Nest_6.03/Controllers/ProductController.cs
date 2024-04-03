@@ -21,7 +21,7 @@ namespace Nest_6._03.Controllers
             var products = await _context.products.
                 Include(x => x.Category)
                 .Include(x => x.ProductImgs)
-                .Include(x=>x.Vendor)
+                .Include(x => x.Vendor)
                 .OrderByDescending(x => x.Id).Take(20).ToListAsync();
             var categories = await _context.categories.Include(x => x.Products).ToListAsync();
             ProductVm productVm = new ProductVm()
@@ -31,18 +31,26 @@ namespace Nest_6._03.Controllers
             };
             return View(productVm);
         }
-        public async Task<IActionResult> Default(){
+        public async Task<IActionResult> Detail(int? id)
+        {
+            if (id == null) return NotFound();
             var product = await _context.products.
                 Include(x => x.Category)
                 .Include(x => x.ProductImgs)
-                .Include(x=>x.Vendor).FirstOrDefaultAsync();
-            var categories = await _context.categories.Include(x => x.Products).ToListAsync();
+                .Include(x => x.Vendor).FirstOrDefaultAsync(x => x.Id == id);
+
+            var products = await _context.products.
+                Include(x => x.Category).ToListAsync();
+
+
+            if (product == null) return NotFound();
+            var categories = await _context.categories.Include(x => x.Products).Where(x => !x.SoftDelete).ToListAsync();
             ProductVm productVm = new ProductVm()
             {
-                product = product,
+                Product = product,
                 Categories = categories
             };
-            return View(productVm);
+            return View(product);
         }
 
     }

@@ -66,3 +66,8 @@
 /Users/jal/Desktop/Nest_6.03/Nest_6.03/obj/Release/net6.0/Nest_6.03.pdb
 /Users/jal/Desktop/Nest_6.03/Nest_6.03/obj/Release/net6.0/Nest_6.03.genruntimeconfig.cache
 /Users/jal/Desktop/Nest_6.03/Nest_6.03/obj/Release/net6.0/ref/Nest_6.03.dll
+/Users/jal/Desktop/Nest_6.03/Nest_6.03/bin/Release/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/jal/Desktop/Nest_6.03/Nest_6.03/bin/Release/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/jal/Desktop/Nest_6.03/Nest_6.03/bin/Release/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/jal/Desktop/Nest_6.03/Nest_6.03/bin/Release/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/jal/Desktop/Nest_6.03/Nest_6.03/bin/Release/net6.0/Microsoft.Extensions.Identity.Stores.dll

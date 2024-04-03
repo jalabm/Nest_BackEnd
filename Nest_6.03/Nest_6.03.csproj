@@ -35,6 +35,12 @@
     <Folder Include="wwwroot\assets\imgs\categoryIcons\" />
     <Folder Include="wwwroot\assets\imgs\vendorIcons\" />
     <Folder Include="Views\Product\" />
+    <Folder Include="Areas\Admin\Views\NavBar\" />
+    <Folder Include="Areas\Admin\Views\SubNavBar\" />
+    <Folder Include="Services\" />
+    <Folder Include="Views\Account\" />
+    <Folder Include="Dtos\" />
+    <Folder Include="Dtos\AppUserDtos\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -52,6 +58,12 @@
     <None Remove="Extensions\" />
     <None Remove="Enums\" />
     <None Remove="Views\Product\" />
+    <None Remove="Areas\Admin\Views\NavBar\" />
+    <None Remove="Areas\Admin\Views\SubNavBar\" />
+    <None Remove="Services\" />
+    <None Remove="Views\Account\" />
+    <None Remove="Dtos\" />
+    <None Remove="Dtos\AppUserDtos\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.27" />
@@ -59,5 +71,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.28" />
   </ItemGroup>
 </Project>

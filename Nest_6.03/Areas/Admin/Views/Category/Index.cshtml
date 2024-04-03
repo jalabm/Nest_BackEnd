@@ -26,16 +26,8 @@
                                         <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="2" aria-label="Position: activate to sort column ascending" style="width: 296.2px;">Actions</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    @foreach (var category in Model)
-                                    {
-                                        <tr class="odd">
-                                            <td class="sorting_1">@category.Name</td>
-                                            <td style="display:flex; justify-content:center; align-items:center"><img width="40" src="~/assets/imgs/categoryIcons/@category.Icon" /></td>
-                                            <td><a class="btn btn-danger" asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id">Delete</a></td>
-                                            <td><a class="btn btn-warning" asp-controller="Category" asp-action="Edit" asp-route-id="@category.Id">Edit</a></td>
-                                        </tr>
-                                    }
+                                <tbody  id="tbody">
+                                  <partial name="_CategoryPartial"  model="Model"/>
                                 </tbody>
                             </table>
                         </div>

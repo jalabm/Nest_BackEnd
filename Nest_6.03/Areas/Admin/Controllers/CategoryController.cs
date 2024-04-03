@@ -41,7 +41,7 @@ public class CategoryController : Controller
             return View(category);
         }
         if (!category.File.CheckFileSize(2))
-        {
+        {   
             ModelState.AddModelError("", "Invalid File Size");
             return View(category);
         }

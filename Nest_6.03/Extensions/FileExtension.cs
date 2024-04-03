@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Nest_6._03.Data;
-using Nest_6._03.Models;
-
-namespace Nest_6._03.Extensions;
+﻿namespace Nest_6._03.Extensions;
 
 public static class FileExtension
 {
