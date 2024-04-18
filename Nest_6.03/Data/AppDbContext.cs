@@ -14,6 +14,15 @@ namespace Nest_6._03.Data
 		public DbSet<Vendor> vendors { get; set; }
 		public DbSet<NavBar> navBars { get; set; }
 		public DbSet<SubNavBar> subNavBars { get; set; }
-	}
+        public DbSet<Size> Sizes { get; set; }
+        public DbSet<ProductSize> ProductSizes { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Category>().HasQueryFilter(x => !x.SoftDelete);
+            base.OnModelCreating(modelBuilder);
+        }
+    }
 }
 

@@ -365,7 +365,7 @@ namespace Nest_6._03.Migrations
 
                     b.HasIndex("SizeId");
 
-                    b.ToTable("ProductSize");
+                    b.ToTable("ProductSizes");
                 });
 
             modelBuilder.Entity("Nest_6._03.Models.ProductWeight", b =>
@@ -408,7 +408,7 @@ namespace Nest_6._03.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Size");
+                    b.ToTable("Sizes");
                 });
 
             modelBuilder.Entity("Nest_6._03.Models.SubNavBar", b =>

@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Nest_6._03.Data;
 using Nest_6._03.Enums;
 using Nest_6._03.Models;
 using Nest_6._03.ViewModels;
@@ -8,16 +10,19 @@ namespace Nest_6._03.Controllers;
 
 public class AccountController : Controller
 {
+    private readonly AppDbContext _context;
     private readonly UserManager<AppUser> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly SignInManager<AppUser> _signInManager;
     public AccountController(UserManager<AppUser> userManager,
                              RoleManager<IdentityRole> roleManager,
-                             SignInManager<AppUser> signInManager)
+                             SignInManager<AppUser> signInManager,
+                             AppDbContext context)
     {
         _userManager = userManager;
         _roleManager = roleManager;
         _signInManager = signInManager;
+        _context = context;
     }
 
     public IActionResult Login()
@@ -111,6 +116,22 @@ public class AccountController : Controller
         await _signInManager.SignOutAsync();
         return RedirectToAction("Index", "Home");
     }
+
+    public async Task<IActionResult> VerifyEmail(string? email, string? token)
+    {
+        if (token == null || email == null) return NotFound();
+        var user = await _context.Users.FirstOrDefaultAsync(e => e.Email == email);
+
+        var verify = await _userManager.ConfirmEmailAsync(user, token);
+        if (verify.Succeeded)
+        {
+            user.EmailConfirmed = true;
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
+        }
+        return RedirectToAction("Index", "Home");
+    }
+
     //public async Task<IActionResult> CreateRole()
     //{
     //    foreach (var role in Enum.GetValues(typeof(Roles)))

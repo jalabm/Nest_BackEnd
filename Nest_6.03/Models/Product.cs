@@ -12,7 +12,11 @@ public class Product
     public decimal? DiscountPrice { get; set; }
     public bool SoftDelete { get; set; }
     [NotMapped]
-    public IFormFile Files { get; set; }
+    public List<IFormFile>? Files { get; set; }
+    [NotMapped]
+    public IFormFile MainFile { get; set; }
+    [NotMapped]
+    public IFormFile HoverFile { get; set; }
     public List<ProductImg> ProductImgs { get; set; } = null!;
     public int CategoryId { get; set; }
     public Category Category { get; set; } = null!;

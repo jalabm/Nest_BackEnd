@@ -43,8 +43,8 @@
                                             <td class="sorting_1">@product.Category.Name</td>
                                             <td class="sorting_1">@product.Vendor.Name</td>
 
-                                            <td><a class="btn btn-danger" asp-controller="Product asp-action="Delete" asp-route-id="@product.Id" asp-area="Admin">Delete</a></td>
-                                            <td><a class="btn btn-warning" asp-controller="Product" asp-action="Edit" asp-route-id="@product.Id"  asp-area="Admin">Edit</a></td>
+                                            <td><a class="btn btn-danger" asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" asp-area="Admin">Delete</a></td>
+                                            <td><a class="btn btn-warning" asp-controller="Product" asp-action="Update" asp-route-id="@product.Id"  asp-area="Admin">Edit</a></td>
                                             <td><a class="btn btn-primary" asp-controller="Product" asp-action="Detail" asp-route-id="@product.Id" asp-area="Admin">Detail</a></td>
                                         </tr>
                                     }

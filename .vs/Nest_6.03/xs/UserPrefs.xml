@@ -1,66 +1,115 @@
 ﻿<Properties StartupConfiguration="{283DAE2B-0B6B-495E-8983-77F25F53013E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Nest_6.03/Controllers/ProductController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Nest_6.03/Areas/Admin/Views/Shared/_Layout.cshtml">
     <Files>
       <File FileName="Nest_6.03/Areas/Admin/Controllers/NavBarController.cs" />
       <File FileName="Nest_6.03/Areas/Admin/Controllers/SubNavBarController.cs" />
-      <File FileName="Nest_6.03/Models/Size.cs" />
-      <File FileName="Nest_6.03/Areas/Admin/Controllers/ProductController.cs" />
-      <File FileName="Nest_6.03/Models/Category.cs" />
-      <File FileName="Nest_6.03/Controllers/ProductController.cs" Line="31" Column="15" />
+      <File FileName="Nest_6.03/Models/Size.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Areas/Admin/Controllers/ProductController.cs" Line="148" Column="18" />
+      <File FileName="Nest_6.03/Models/Category.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Controllers/ProductController.cs" Line="83" Column="43" />
       <File FileName="Nest_6.03/ViewModels/ProductVm.cs" />
       <File FileName="Nest_6.03/Areas/Admin/Views/Product/Create.cshtml" />
-      <File FileName="Nest_6.03/Views/Home/Index.cshtml" Line="3" Column="1" />
-      <File FileName="Nest_6.03/Models/Product.cs" />
-      <File FileName="Nest_6.03/Models/ProductImg.cs" />
-      <File FileName="Nest_6.03/Views/Product/Index.cshtml" />
-      <File FileName="Nest_6.03/Controllers/HomeController.cs" />
-      <File FileName="Nest_6.03/Controllers/AccountController.cs" Line="45" Column="68" />
-      <File FileName="Nest_6.03/Enums/Roles.cs" Line="6" Column="14" />
-      <File FileName="Nest_6.03/Models/AppUser.cs" Line="14" Column="1" />
-      <File FileName="Nest_6.03/Services/LayoutService.cs" Line="26" Column="14" />
-      <File FileName="Nest_6.03/Services/ILayoutService.cs" Line="9" Column="6" />
-      <File FileName="Nest_6.03/ViewModels/LoginVm.cs" Line="14" Column="5" />
-      <File FileName="Nest_6.03/ViewModels/RegisterVm.cs" Line="9" Column="50" />
-      <File FileName="Nest_6.03/Views/Account/Login.cshtml" Line="2" Column="1" />
-      <File FileName="Nest_6.03/Views/Account/Register.cshtml" Line="1" Column="18" />
-      <File FileName="Nest_6.03/Views/Shared/_Layout.cshtml" Line="16" Column="36" />
-      <File FileName="Nest_6.03/Views/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="Nest_6.03/Views/_ViewImports.cshtml" Line="3" Column="29" />
-      <File FileName="Nest_6.03/Program.cs" Line="18" Column="41" />
-      <File FileName="Nest_6.03/Data/AppDbContext.cs" Line="17" Column="3" />
-      <File FileName="Nest_6.03/Migrations/20240402093424_appUser.cs" Line="1" Column="1" />
-      <File FileName="Nest_6.03/Dtos/AppUserDtos/UserGetDto.cs" Line="9" Column="3" />
+      <File FileName="Nest_6.03/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Models/Product.cs" Line="16" Column="16" />
+      <File FileName="Nest_6.03/Models/ProductImg.cs" Line="13" Column="1" />
+      <File FileName="Nest_6.03/Views/Product/Index.cshtml" Line="337" Column="58" />
+      <File FileName="Nest_6.03/Controllers/HomeController.cs" Line="35" Column="70" />
+      <File FileName="Nest_6.03/Controllers/AccountController.cs" Line="13" Column="42" />
+      <File FileName="Nest_6.03/Enums/Roles.cs" />
+      <File FileName="Nest_6.03/Models/AppUser.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Services/LayoutService.cs" Line="3" Column="22" />
+      <File FileName="Nest_6.03/Services/ILayoutService.cs" Line="8" Column="14" />
+      <File FileName="Nest_6.03/ViewModels/LoginVm.cs" />
+      <File FileName="Nest_6.03/ViewModels/RegisterVm.cs" />
+      <File FileName="Nest_6.03/Views/Account/Login.cshtml" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Views/Account/Register.cshtml" />
+      <File FileName="Nest_6.03/Views/Shared/_Layout.cshtml" Line="265" Column="43" />
+      <File FileName="Nest_6.03/Views/_ViewStart.cshtml" />
+      <File FileName="Nest_6.03/Views/_ViewImports.cshtml" />
+      <File FileName="Nest_6.03/Program.cs" Line="14" Column="1" />
+      <File FileName="Nest_6.03/Data/AppDbContext.cs" Line="19" Column="1" />
+      <File FileName="Nest_6.03/Migrations/20240402093424_appUser.cs" />
+      <File FileName="Nest_6.03/Dtos/AppUserDtos/UserGetDto.cs" Line="2" Column="27" />
+      <File FileName="Nest_6.03/Areas/Admin/Controllers/CategoryController.cs" />
+      <File FileName="Nest_6.03/Dtos/ProductDtos/ProductCreateDto.cs" Line="21" Column="1" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/_ViewImports.cshtml" Line="10" Column="8" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/Category/Create.cshtml" />
+      <File FileName="Nest_6.03/Extensions/FileExtension.cs" Line="45" Column="6" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/Category/Index.cshtml" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/Product/Index.cshtml" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/Product/Update.cshtml" />
+      <File FileName="Nest_6.03/Dtos/ProductDtos/ProductUpdateDto.cs" Line="18" Column="57" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/Shared/_Layout.cshtml" Line="11" Column="1" />
+      <File FileName="Nest_6.03/Areas/Admin/Controllers/ProductSizeController.cs" Line="32" Column="23" />
+      <File FileName="Nest_6.03/Areas/Admin/Controllers/SizeController.cs" Line="31" Column="45" />
+      <File FileName="Nest_6.03/Models/ProductSize.cs" Line="20" Column="45" />
+      <File FileName="Nest_6.03/Models/ProductWeight.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Models/SubNavBar.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Models/Vendor.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Models/Weight.cs" Line="1" Column="1" />
+      <File FileName="Nest_6.03/ViewComponents/CartViewComponent.cs" Line="21" Column="71" />
+      <File FileName="Nest_6.03/ViewComponents/SearchViewComponent.cs" Line="20" Column="13" />
+      <File FileName="Nest_6.03/ViewModels/ProductSearchVm.cs" Line="10" Column="55" />
+      <File FileName="Nest_6.03/ViewModels/BasketVm.cs" Line="7" Column="39" />
+      <File FileName="Nest_6.03/ViewModels/PaginateVm.cs" Line="12" Column="6" />
+      <File FileName="Nest_6.03/ViewModels/BasketItemsVm.cs" Line="10" Column="42" />
+      <File FileName="Nest_6.03/Views/Product/Detail.cshtml" Line="33" Column="89" />
+      <File FileName="Nest_6.03/Views/Product/Search.cshtml" Line="29" Column="179" />
+      <File FileName="Nest_6.03/Views/Shared/Components/Cart/Default.cshtml" Line="14" Column="59" />
+      <File FileName="Nest_6.03/Views/Shared/Components/Search/Default.cshtml" Line="9" Column="7" />
+      <File FileName="Nest_6.03/Views/Vendor/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Nest_6.03/Areas/Admin/ViewModels/ProductSizeVm.cs" Line="8" Column="39" />
+      <File FileName="Nest_6.03/Services/EmailService.cs" Line="34" Column="19" />
+      <File FileName="Nest_6.03/Areas/Admin/Views/Shared/_CategoryPartial.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Nest_6.03" expanded="True">
             <Node name="Nest_6.03">
-              <Node name="Controllers" expanded="True">
-                <Node name="ProductController.cs" selected="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="ViewModels" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Product" expanded="True" />
+                    <Node name="Shared">
+                      <Node name="_Layout.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
               </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
-              <Node name="Dtos" expanded="True" />
+              <Node name="Dtos" expanded="True">
+                <Node name="AppUserDtos" expanded="True" />
+                <Node name="ProductDtos" expanded="True" />
+              </Node>
               <Node name="Enums" expanded="True" />
-              <Node name="Services" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewComponents" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True" />
-                <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
+                <Node name="Product" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="Components" expanded="True">
+                    <Node name="Cart" expanded="True" />
+                    <Node name="Search" expanded="True" />
+                  </Node>
+                </Node>
               </Node>
-              <Node name="wwwroot" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Nest__6.03 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.ItemProperties.Nest__6.03 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>

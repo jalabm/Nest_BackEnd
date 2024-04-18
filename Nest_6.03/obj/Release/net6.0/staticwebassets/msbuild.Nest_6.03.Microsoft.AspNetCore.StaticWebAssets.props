@@ -30800,6 +30800,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\categoryIcons\56e7484a-529f-4658-8f8b-ef080d4df67d_alma.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\categoryIcons\9f50460d-5690-408d-92eb-7e4412358f2d_vegetable.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/categoryIcons/9f50460d-5690-408d-92eb-7e4412358f2d_vegetable.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\categoryIcons\9f50460d-5690-408d-92eb-7e4412358f2d_vegetable.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\invoice\banner.png))">
       <SourceType>Package</SourceType>
       <SourceId>Nest_6.03</SourceId>
@@ -31104,6 +31120,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\14ae3a77-760f-4b7f-9499-cc95e042570d_1200px-Javascript_badge.svg.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\16016fbe-4d34-402f-b611-a60bc59379b2_1200px-Javascript_badge.svg.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/productImg/16016fbe-4d34-402f-b611-a60bc59379b2_1200px-Javascript_badge.svg.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\16016fbe-4d34-402f-b611-a60bc59379b2_1200px-Javascript_badge.svg.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\21a60807-9ec2-4959-9ece-6dbb1f3ac963_1024px-HTML5_Badge.svg.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/productImg/21a60807-9ec2-4959-9ece-6dbb1f3ac963_1024px-HTML5_Badge.svg.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\21a60807-9ec2-4959-9ece-6dbb1f3ac963_1024px-HTML5_Badge.svg.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\40aef338-fe88-4b20-9083-0dadd583c83e_1024px-HTML5_Badge.svg.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/productImg/40aef338-fe88-4b20-9083-0dadd583c83e_1024px-HTML5_Badge.svg.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\40aef338-fe88-4b20-9083-0dadd583c83e_1024px-HTML5_Badge.svg.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\536b63b4-0585-44a0-bbd2-c80f65aa3a27_1200px-Javascript_badge.svg.png))">
       <SourceType>Package</SourceType>
       <SourceId>Nest_6.03</SourceId>
@@ -31119,6 +31183,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\536b63b4-0585-44a0-bbd2-c80f65aa3a27_1200px-Javascript_badge.svg.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\6c9b912b-f850-4636-9f63-7bd909c702be_1024px-HTML5_Badge.svg.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/productImg/6c9b912b-f850-4636-9f63-7bd909c702be_1024px-HTML5_Badge.svg.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\6c9b912b-f850-4636-9f63-7bd909c702be_1024px-HTML5_Badge.svg.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\alma.jpeg))">
       <SourceType>Package</SourceType>
@@ -31152,6 +31232,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\c4a39605-1066-42fb-87c0-fea1f7d19a06_1200px-Javascript_badge.svg.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\c513bb5e-bf82-4ecb-98a5-bbf0ebd9aa87_alma.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/productImg/c513bb5e-bf82-4ecb-98a5-bbf0ebd9aa87_alma.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\c513bb5e-bf82-4ecb-98a5-bbf0ebd9aa87_alma.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\caca0985-48c6-4573-a514-7b2ee58ee906_1200px-Javascript_badge.svg.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/productImg/caca0985-48c6-4573-a514-7b2ee58ee906_1200px-Javascript_badge.svg.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\caca0985-48c6-4573-a514-7b2ee58ee906_1200px-Javascript_badge.svg.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\cf3cb60d-6504-4d5a-a470-0b7bf6b8f897_1200px-Javascript_badge.svg.png))">
       <SourceType>Package</SourceType>
       <SourceId>Nest_6.03</SourceId>
@@ -31167,6 +31279,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\cf3cb60d-6504-4d5a-a470-0b7bf6b8f897_1200px-Javascript_badge.svg.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\e24b1f90-e959-4a4f-8d20-c45032978058_1200px-Javascript_badge.svg.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>Nest_6.03</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Nest_6.03</BasePath>
+      <RelativePath>assets/imgs/productImg/e24b1f90-e959-4a4f-8d20-c45032978058_1200px-Javascript_badge.svg.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\productImg\e24b1f90-e959-4a4f-8d20-c45032978058_1200px-Javascript_badge.svg.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\imgs\shop\cat-1.png))">
       <SourceType>Package</SourceType>

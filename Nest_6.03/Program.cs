@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 builder.Services.AddScoped<ILayoutService, LayoutService>();
+builder.Services.AddTransient<IEmailService, EmailService>();
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 {
@@ -24,10 +25,10 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 }).AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
 
-builder.Services.ConfigureApplicationCookie(x =>
-{
-    x.LoginPath = "/Account/Login";
-});
+//builder.Services.ConfigureApplicationCookie(x =>
+//{
+//    x.LoginPath = "/Account/Login";
+//});
 
 var app = builder.Build();
 if (!app.Environment.IsDevelopment())

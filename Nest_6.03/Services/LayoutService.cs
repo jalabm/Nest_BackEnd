@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Identity;
-using Nest_6._03.Dtos.AppUserDtos;
+using Nest_6._03.Dtos;
 using Nest_6._03.Models;
 
 namespace Nest_6._03.Services

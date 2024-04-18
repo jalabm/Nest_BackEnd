@@ -30,5 +30,10 @@ public HomeController(AppDbContext context)
         return View(productVm);
     }
 
+    public IActionResult ProductCategoryFilter(int? id)
+    {
+        return ViewComponent("HomeProduct", new { categoryId = id });
+    }
+
 }
 
